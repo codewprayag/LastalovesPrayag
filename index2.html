@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            background: url('https://stock.adobe.com/search?k=violet+flower+background') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #ff4d79;
+            color: white;
+        }
+        .no {
+            background-color: grey;
+            color: white;
+            cursor: not-allowed;
+        }
+        .message {
+            display: none;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.ibb.co/qY9RQPqK/Screenshot-2025-02-11-143042.png" alt="Valentine Image">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes" onclick="yesClicked()">Yes</button>
+            <button class="no" disabled>No</button>
+        </div>
+        <p class="message" id="thankYouMessage">Thank you smmm! I love you! 💖</p>
+    </div>
+    <script>
+        function yesClicked() {
+            document.getElementById("thankYouMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
